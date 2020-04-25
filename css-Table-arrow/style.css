@@ -1,0 +1,139 @@
+body {
+	font-family: arial, sans-serif;
+	height: 100vh;
+	background-color: #ddd;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 300px;
+	padding: 20px 30px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: -5px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+table {
+	width: 100%;
+}
+
+th {
+	padding: 20px 0;
+	background-color: green;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid #000;
+}
+
+tr {
+	transition: all 0.3s;
+}
+
+tr:hover {
+	background-color: #999;
+}
+/*=============================*/
+.arrow-left {
+	position: relative;
+}
+
+.arrow-left::after {
+	content: '';
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent #f00 transparent transparent;
+	position: absolute;
+	top: 50%;
+	left: 110%;
+	transform: translate(0, -50%);
+}
+/*=============================*/
+.arrow-right {
+	position: relative;
+}
+
+.arrow-right::after {
+	content: '';
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent #f00;
+	position: absolute;
+	top: 50%;
+	left: 110%;
+	transform: translate(0, -50%);
+}
+/*=============================*/
+.arrow-bottom {
+	position: relative;
+}
+
+.arrow-bottom::after {
+	content: '';
+	border-width: 5px;
+	border-style: solid;
+	border-color: #f00 transparent transparent transparent;
+	position: absolute;
+	top: 50%;
+	left: 110%;
+	transform: translate(0, -50%);
+}
+/*=============================*/
+.arrow-top {
+	position: relative;
+}
+
+.arrow-top::after {
+	content: '';
+	/*=== One way ===*/
+	/*border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent #f00 transparent;*/
+
+	/*=== Other way ===*/
+	border-bottom: 5px solid #f00;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+
+	position: absolute;
+	top: 50%;
+	left: 110%;
+	transform: translate(0, -50%);
+}
+
+.tooltip {
+	margin-top: 20px;
+	padding-top: 5px;
+	border-bottom: 1px dotted #000;
+	display: inline-block;
+	position: relative;
+}
+
+.tooltip__text {
+	width: 80px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	color: #fff;
+	background-color: #333;
+	position: absolute;
+	top: 50%;
+	left: 120%;
+	transform: translate(0, -50%);
+	/*visibility not have status to create transition*/
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.tooltip:hover .tooltip__text{
+	visibility: visible;
+	opacity: 1;
+}
