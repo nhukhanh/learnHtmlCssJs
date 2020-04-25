@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation - https://animejs.com/</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<a id="animate" class="btn animate" href="#">Đăng ký học</a>
+	</div>
+	<script type="text/javascript">
+		let idInBtn = setInterval(myMove, 5000);
+
+		function myMove(){
+			let eBtn = document.getElementById('animate');
+			let i = 0;
+			let time = 0;
+			let id = setInterval(frame, 125)
+			function frame(){
+				if (time === 500){
+					eBtn.style.left = '0%';
+					clearInterval(id);
+				} else if (i % 2 === 0){
+					time += 125;
+					eBtn.style.left = '2%';
+					i++;
+				} else {
+					time += 125;
+					eBtn.style.left = '-2%';
+					i++;
+				}
+			}
+		}
+
+		myMove();
+
+	</script>
+</body>
+</html>
