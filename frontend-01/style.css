@@ -1,0 +1,108 @@
+/*section 3*/
+.section-3 .row > div:last-child p{
+	padding-top: 1rem;
+	font-size: 14px;
+	color: #666;
+	line-height: 1.8;
+}
+
+.section-3 .row > div:first-child div{
+	color: #666;
+	line-height: 1.8;
+}
+
+.section-3 .row > div:first-child h3{
+	font-weight: 300;
+	padding-bottom: 1rem;
+}
+
+/*section 6*/
+.section-6 .row{
+	padding: 100px 0;
+}
+
+.section-6 .row h3, .section-6 .row	 p{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.section-6 .row a::before {
+	content: '$18 USD';
+	font-size: 12px;
+	padding: 3px 9px;
+	background-color: red;
+	border-radius: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translate(50%, -50%);
+}
+
+.section-6 .row a{
+	text-transform: uppercase;
+	position: relative;
+}
+/*Footer*/
+.footer .row div:first-child a{
+	text-transform: uppercase;
+	color: #ccc;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 8px 8px;
+	text-align: center;
+	transition: all 0.5s;
+}
+
+.footer .row div:nth-of-type(3) {
+	font-size: 12px;
+	color: #eee;
+}
+
+.footer .row div:nth-of-type(3) a {
+	margin-left: 1rem;
+	text-decoration: none;
+	color: #eee;
+}
+.footer .row div:nth-of-type(3) a:hover{
+	text-decoration: underline;
+}
+
+.footer .row div:nth-of-type(4){
+	color: #eee;
+	font-size: 12px;
+}
+
+.footer .icon a{
+	margin-left: 1.5rem;
+	color: #ccc;
+	transition: all 0.5s;
+}
+
+.footer .icon a:hover{
+	color: #fff;
+}
+
+.footer .row div:first-child a:hover{
+	color: #fff;
+}
+
+@media (min-width: 768px){
+	.section-3 .row > div:last-child p{
+		margin-top: 6rem;
+	}
+
+	.section-3 .row > div:first-child div{
+		margin-top: 5rem;
+	}
+}
+
+@media (max-width: 768px){
+	.footer .row div:first-child {
+		padding-bottom: 1rem;
+	}
+
+	.footer .icon {
+		padding-bottom: 1rem;
+	}
+}
