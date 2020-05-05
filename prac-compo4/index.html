@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div class="container">
+	  <div class="payment">
+	    <div class="title">
+	      <h2>Payment method</h2>
+	      <svg fill="#333" width="32" height="32" viewBox="0 0 24 24"><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></svg>								
+	    </div><!-- title -->
+	    <form action="#" class="form-card">
+	      <div class="form-card_type">
+	        <img src="https://www.vyopta.com/wp-content/uploads/2016/06/visa-logo.jpg" alt="">
+	        <img src="https://cdn.vox-cdn.com/thumbor/FtAV-Waa1rTPheAkxv3o4i0MVf0=/0x0:1000x1000/1200x800/filters:focal(421x430:581x590)/cdn.vox-cdn.com/uploads/chorus_image/image/62800797/Mastercard_logo.0.jpg" alt="">
+	      </div><!-- form-card_type -->
+	      <div class="form-group">
+	        <lable>Cardholder name</lable>
+	        <input type="text" placeholder="Diane Miles">
+	      </div>
+	      <div class="form-card_wrap-info">
+	        <div class="form-group">
+	          <lable>Card number</lable>
+	          <input type="text" placeholder="1234 6573 8228 7373">
+	        </div>
+	        <div class="form-group">
+	          <lable for="card_number">Date</lable>
+	          <input id="card_number" type="text" placeholder="02/09" onfocus="this.type='date'">
+	        </div>
+	        <div class="form-group">
+	          <lable for="date">CCV</lable>
+	          <input id="date" type="text" placeholder="329">
+	        </div>
+	       </div><!-- wrap-info-->
+	      <p class="payment_info">
+	        <a href="#"><svg fill="#339BDB" width="30" height="30" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+	        </a>
+	        Credit Card payments may take up to 24h to processed
+	      </p><!-- payment_info -->
+	    </form><!-- form -->
+	  </div><!-- payment -->
+	</div><!-- container -->
+</body>
+</html>

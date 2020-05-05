@@ -1,0 +1,129 @@
+* {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #323335;
+  height: 100vh;
+}
+
+.container {
+  width: 700px;
+  margin: auto;
+  padding: 2rem 2rem;
+  background-color: #C1C6CF;
+}
+
+.order-sum {
+  background-color: #fff;
+}
+/* order-sum_title */
+.order-sum_title {
+  color: #6F727A;
+  padding: 1.5rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+
+.order-sum_title svg:hover {
+  transform: scale(1.1);
+  fill: #289FE8;
+}
+
+/* order-sum_value */
+.order-sum_value {
+  color: #88898B;
+  padding: 2rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.order-sum_value .row_value {
+  font-size: 1.05rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-sum_value .row_value:nth-of-type(1) {
+  margin-bottom: 1.5rem;
+}
+
+.order-sum_value .row_value span:nth-of-type(2) {
+  font-weight: bold;
+}
+
+/* order-sum_total */
+.order-sum_total {
+  padding: 1.5rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.order-sum_total .row_total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-sum_total .row_total div {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-sum_total .total {
+  margin-bottom: 1rem;
+}
+
+.order-sum_total .total h3{
+  color: #6F727A; 
+}
+
+.order-sum_total .total span{
+  padding-top: 5px;
+  color: #A6A7AA;
+}
+
+.order-sum_total .total h1{
+  color: #6F727A;
+  font-weight: 400;
+}
+
+.order-sum_total .total-two {
+  padding: 1.2rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #E2EFFC;
+  border: 1px solid rgba(117, 179, 238, 0.2);
+  border-radius: 3px;
+}
+
+.order-sum_total .total-two h2{
+  color: #35B9FF;
+}
+
+.order-sum_total .total-two span:last-child {
+  margin-top: 0.5rem;
+  color: #3E3E3E;
+}
+
+.order-sum_total .total-two span:first-child {
+  color: #A6A7AA;
+}
+
+.order-sum_total .btn_total {
+  height: 3rem;
+  line-height: 3rem;
+  color: #fff;
+  font-size: 1.08rem;
+  background-color: #35B9FF;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
