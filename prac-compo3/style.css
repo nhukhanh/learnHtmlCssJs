@@ -1,0 +1,56 @@
+* {
+  font-family: arial, 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  max-width: 550px;
+  background-color: #243E51;
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.input-find {
+  width: 100%;
+  color: #E5E8DE;
+  border-radius: 0.8rem;
+  border: none;
+  padding: 15px 20px;
+  margin-bottom: 2rem;
+  background-color: #BFCFC8;
+  font-size: 1.06rem;
+  outline: none;
+}
+
+
+/* item */
+.item-btn {
+  padding: 1rem 0;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.item-btn .wrap-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6DEBA2;
+}
+
+.item-btn p {
+  font-size: 1.08rem;
+  margin-left: 1.5rem;
+}
