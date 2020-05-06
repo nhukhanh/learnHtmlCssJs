@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Slide type 1</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div class="slideshow-container">
+	  <h2>Freetus.net hướng dẫn tạo slideShow đơn giản</h2>
+	  <div class="mySlides fade">
+	    <img src="https://picsum.photos/id/0/700/400" style="width: 100%">
+	    <div class="text">Nội dung caption của slide đầu tiên!</div>
+	  </div>
+	 
+	  <div class="mySlides fade">
+	    <img src="https://picsum.photos/id/1/700/400" style="width: 100%">
+	    <div class="text">Nội dung caption của slide thứ 2!</div>
+	  </div>
+	 
+	  <div class="mySlides fade">
+	    <img src="https://picsum.photos/id/10/700/400" style="width: 100%">
+	    <div class="text">Nội dung caption của slide thứ 3!</div>
+	  </div>
+
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	 
+	<div style="text-align:center">
+	  <span class="dot" data-id="0"></span> 
+	  <span class="dot" data-id="1"></span> 
+	  <span class="dot" data-id="2"></span> 
+	</div>
+	<div style="text-align:center; margin-top:30px;"><a href="https://freefrontend.com/css-slideshows/" target="_blank">24 CSS slideshows</a></div>
+	<script>
+	  // declare variable
+	  var slideIndex;
+	  var dots = document.getElementsByClassName("dot");
+
+	  // Add event
+	  for (i = 0; i < dots.length; i++) {
+	          dots[i].addEventListener('click', currentSlide);
+	      }
+
+	  // Functions
+	  function showSlides() {
+	      var i;
+	      var slides = document.getElementsByClassName("mySlides");
+	      for (i = 0; i < slides.length; i++) {
+	         slides[i].style.display = "none";  
+	      }
+	      for (i = 0; i < dots.length; i++) {
+	          dots[i].className = dots[i].className.replace(" active", "");
+	      }
+	 
+	      slides[slideIndex].style.display = "block";  
+	      dots[slideIndex].className += " active";
+	      slideIndex++;
+	      if (slideIndex > slides.length - 1) {
+	        slideIndex = 0
+	      }
+	      setTimeout(showSlides, 5000);
+	  }
+
+	  function currentSlide(event) {
+	  	slideIndex = parseInt(event.target.dataset.id);
+	    showSlides();
+	  }
+
+	  //mặc định hiển thị slide đầu tiên 
+	  showSlides(slideIndex = 0);
+	 
+</script>
+</body>
+</html>
