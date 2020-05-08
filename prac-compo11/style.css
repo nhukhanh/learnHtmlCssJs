@@ -6,15 +6,24 @@
 }
 
 body {
+}
+
+.row {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 }
 
-.wrap-overlay {
+/*zoom*/
+.overlay-container {
+	margin-right: 20px;
+}
+
+.wrap-overlay-zoom {
 	position: relative;
 }
 
-.overlay {
+.wrap-overlay-zoom .overlay {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -25,18 +34,110 @@ body {
 	transition: all 0.4s;
 }
 
-.overlay .text{
+.wrap-overlay-zoom .overlay .text{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #fff;
 	font-size: 1.5rem;
+}
+
+.wrap-overlay-zoom:hover .overlay {
+	transform: scale(1);
+}
+/*fade-text*/
+
+.wrap-overlay-fade-text {
+	position: relative;
+}
+
+.wrap-overlay-fade-text .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(8, 188, 241);
+	opacity: 0;
+	transition: all 0.4s;
+}
+
+.wrap-overlay-fade-text .overlay .text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.wrap-overlay-fade-text:hover .overlay {
 	opacity: 1;
 }
 
-.wrap-overlay:hover .overlay {
-	transform: scale(1);
+/*fade-box*/
+
+.wrap-overlay-fade-box {
+	position: relative;
+}
+
+.wrap-overlay-fade-box .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: all 0.4s;
+}
+
+.wrap-overlay-fade-box .overlay .text{
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: #2DC876;
+}
+
+.wrap-overlay-fade-box:hover .overlay {
+	opacity: 1;
+}
+
+/*overlay-slide-intop*/
+.wrap-overlay-slide-intop {
+	position: relative;
+}
+
+.wrap-overlay-slide-intop .overlay {
+	position: absolute;
+	width: 100%;
+	height: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*ngoài khung nội dung sẽ ẩn đi*/
+	overflow: hidden;
+	background-color: rgba(8, 188, 241);
+	/*opacity: 0;*/
+	transition: all 0.4s;
+}
+
+.wrap-overlay-slide-intop .overlay .text {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+.wrap-overlay-slide-intop:hover .overlay {
+	height: 100%;
+	/*opacity: 1;*/
 }
 
 
