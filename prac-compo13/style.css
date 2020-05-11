@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+body {
+	min-height: 100vh;
+}
+
+.container {
+	position: relative;
+	background-color: #1C0657;
+	max-width: 1120px;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+
+header {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;	
+	padding: 2rem 4rem;
+}
+
+header .logo {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+header ul li {
+	list-style-type: none;
+}
+
+header ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+section {
+	display: flex;
+	justify-content: space-between;
+}
+
+section .imgBx {
+	position: relative;
+	text-align: right;
+	top: 3rem;
+	/*bottom: 3rem;*/
+	right: 6rem;
+	z-index: 2;
+	/*width: 40%;*/
+}
+
+section .imgBx img {
+	width: 80%;
+}
+
+.wave {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80%;
+}
+
+.contentBx {
+	position: relative;
+	z-index: 10;
+	padding: 2rem 4rem;
+	color: #fff;
+	max-width: 600px;
+}
+
+.contentBx a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 1rem 2rem;
+	border-radius: 25px;
+	color: #fff;
+	background-color: #DD12DA;
+}
+
+.contentBx h2 {
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+.contentBx p {
+	margin-bottom: 1.5rem;
+}
+
+.contentBx .countdown {
+	display: flex;
+	margin-bottom: 1.5rem;
+}
+
+.countdown .time {
+	margin-right: 1rem;
+	background-color: #fff;
+	min-width: 80px;
+	border-radius: 3px;
+	text-align: center;
+	padding-bottom: 8px;
+}
+
+.countdown .time div {
+	font-size: 2rem;
+	font-weight: 600;
+	padding-top: 15px;
+	padding-bottom: 5px;	
+	color: #E015E3;
+}
+
+.countdown .time span {
+	font-size: 14px;
+	font-weight: bold;
+	color: #270E27;
+}
+
+
+section .sci {
+	position: absolute;
+	left: 4rem;
+	bottom: 2rem;
+	/*width: 100%;*/
+	display: flex;
+	filter: invert(1);
+}
+
+section .sci li {
+	list-style-type: none;
+	margin-right: 1rem;
+}
+
+section .sci li img {
+	height: 20px;
+}
+
+.newsletter {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	padding: 60px;
+	background-color: #fff;
+	z-index: 2000;
+	box-shadow: 0 0 0 100vh rgba(49, 39, 41, 0.95);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.newsletter h2 {
+	font-size: 48px;
+}
+
+.newsletter p {
+	font-size: 20px;
+}
+
+
+.mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+}
